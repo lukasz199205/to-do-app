@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Twoja lista zadań {% endblock %}
+
+
+{% block body %}
+    <div class="header">
+        <h2>Moja lista zadań</h2>
+        <form method="post">
+            <input name="title" type="text" id="myInput" placeholder="Nazwa zadania..." />
+            <button type="submit" class="addBtn">Dodaj zadanie</button>
+        </form>
+    </div>
+
+    <ul>
+        <li class="checked">
+            <a href="#"> <span class="task-list-item"> </span> </a
+            ><a onclick="return confirm('Are you sure to delete?')" href="#"><span class="close">X</span></a>
+        </li>
+    </ul>
+
+{% endblock %}
